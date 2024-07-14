@@ -506,5 +506,12 @@ GM.RestrictedModels = {
 	["models/player/skeleton.mdl"] = true,
 	["models/player/zombie_classic.mdl"] = true,
 	["models/player/zombie_soldier.mdl"] = true,
-	["models/player/zombie_fast.mdl"] = true
+	["models/player/zombie_fast.mdl"] = true,
+	["models/player/classic_headcrab_zombie.mdl"] = true,
+	["models/player/anniversary_skeleton.mdl"] = true,
+	["models/player/hl2ac_zombie_classic.mdl"] = true,
+	["models/player/obsidianconflict/combine_zombie.mdl"] = true,
+	["models/player/obsidianconflict/headcrab.mdl"] = true,
+	["models/lantern/zombine.mdl"] = true,
+	["models/player/obsidianconflict/hunter.mdl"] = true,
 }
