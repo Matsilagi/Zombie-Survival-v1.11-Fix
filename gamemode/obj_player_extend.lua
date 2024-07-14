@@ -329,6 +329,316 @@ VoiceSets["null"]["DeathSounds"] = {
 	Sound("common/null.wav")
 }
 
+if file.Exists("sound/vo/bs09","GAME") then
+
+	print("Enabling Matsilagi ZS Extra Voices")
+	VoiceSets["bs09_medic"] = {}
+	VoiceSets["bs09_medic"]["PainSoundsLight"] = {
+		Sound("vo/bs09/MDC/Medic_G_1.wav"),
+		Sound("vo/bs09/MDC/Medic_G_2.wav"),
+		Sound("vo/bs09/MDC/Medic_G_3.wav"),
+	}
+	VoiceSets["bs09_medic"]["PainSoundsMed"] = {
+		Sound("vo/bs09/MDC/Medic_G_4.wav"),
+		Sound("vo/bs09/MDC/Medic_G_5.wav"),
+		Sound("vo/bs09/MDC/Medic_G_6.wav")
+	}
+	VoiceSets["bs09_medic"]["PainSoundsHeavy"] = {
+		Sound("vo/bs09/MDC/Medic_G_7.wav"),
+		Sound("vo/bs09/MDC/Medic_G_8.wav"),
+		Sound("vo/bs09/MDC/Medic_G_9.wav"),
+		Sound("vo/bs09/MDC/Medic_G_12.wav"),
+		Sound("vo/bs09/MDC/Medic_G_13.wav"),
+	}
+	VoiceSets["bs09_medic"]["DeathSounds"] = {
+		Sound("vo/bs09/MDC/Medic_G_16.wav"),
+		Sound("vo/bs09/MDC/Medic_G_17.wav"),
+		Sound("vo/bs09/MDC/Medic_G_18.wav"),
+	}
+	
+	VoiceSets["bs09_guardian"] = {}
+	VoiceSets["bs09_guardian"]["PainSoundsLight"] = {
+		Sound("vo/bs09/GRD/Guardian_G_1.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_2.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_3.wav"),
+	}
+	VoiceSets["bs09_guardian"]["PainSoundsMed"] = {
+		Sound("vo/bs09/GRD/Guardian_G_4.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_5.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_6.wav")
+	}
+	VoiceSets["bs09_guardian"]["PainSoundsHeavy"] = {
+		Sound("vo/bs09/GRD/Guardian_G_7.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_8.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_9.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_12.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_13.wav"),
+	}
+	VoiceSets["bs09_guardian"]["DeathSounds"] = {
+		Sound("vo/bs09/GRD/Guardian_G_16.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_17.wav"),
+		Sound("vo/bs09/GRD/Guardian_G_18.wav"),
+	}
+	VoiceSets["bs09_psychicer"] = {}
+	VoiceSets["bs09_psychicer"]["PainSoundsLight"] = {
+		Sound("vo/bs09/PSY/Psychicer_G_1.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_2.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_3.wav"),
+	}
+	VoiceSets["bs09_psychicer"]["PainSoundsMed"] = {
+		Sound("vo/bs09/PSY/Psychicer_G_4.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_5.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_6.wav")
+	}
+	VoiceSets["bs09_psychicer"]["PainSoundsHeavy"] = {
+		Sound("vo/bs09/PSY/Psychicer_G_7.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_8.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_9.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_12.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_13.wav"),
+	}
+	VoiceSets["bs09_psychicer"]["DeathSounds"] = {
+		Sound("vo/bs09/PSY/Psychicer_G_16.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_17.wav"),
+		Sound("vo/bs09/PSY/Psychicer_G_18.wav"),
+	}
+	
+	VoiceSets["bs09_ranger"] = {}
+	VoiceSets["bs09_ranger"]["PainSoundsLight"] = {
+		Sound("vo/bs09/RNG/Ranger_G_1.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_2.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_3.wav"),
+	}
+	VoiceSets["bs09_ranger"]["PainSoundsMed"] = {
+		Sound("vo/bs09/RNG/Ranger_G_4.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_5.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_6.wav")
+	}
+	VoiceSets["bs09_ranger"]["PainSoundsHeavy"] = {
+		Sound("vo/bs09/RNG/Ranger_G_7.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_8.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_9.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_12.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_13.wav"),
+	}
+	VoiceSets["bs09_ranger"]["DeathSounds"] = {
+		Sound("vo/bs09/RNG/Ranger_G_16.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_17.wav"),
+		Sound("vo/bs09/RNG/Ranger_G_18.wav"),
+	}
+	
+	VoiceSets["bs09_sniper"] = {}
+	VoiceSets["bs09_sniper"]["PainSoundsLight"] = {
+		Sound("vo/bs09/SNP/Sniper_G_1.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_2.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_3.wav"),
+	}
+	VoiceSets["bs09_sniper"]["PainSoundsMed"] = {
+		Sound("vo/bs09/SNP/Sniper_G_4.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_5.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_6.wav")
+	}
+	VoiceSets["bs09_sniper"]["PainSoundsHeavy"] = {
+		Sound("vo/bs09/SNP/Sniper_G_7.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_8.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_9.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_12.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_13.wav"),
+	}
+	VoiceSets["bs09_sniper"]["DeathSounds"] = {
+		Sound("vo/bs09/SNP/Sniper_G_16.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_17.wav"),
+		Sound("vo/bs09/SNP/Sniper_G_18.wav"),
+	}
+	
+	VoiceSets["gstring_bankster"] = {}
+	VoiceSets["gstring_bankster"]["PainSoundsLight"] = {
+		Sound("vo/gstringv2_nosumer_male/pain01.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain02.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain03.wav")
+	}
+	VoiceSets["gstring_bankster"]["PainSoundsMed"] = {
+		Sound("vo/gstringv2_nosumer_male/pain04.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain05.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain06.wav")
+	}
+	VoiceSets["gstring_bankster"]["PainSoundsHeavy"] = {
+		Sound("vo/gstringv2_nosumer_male/pain07.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain08.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain09.wav"),
+	}
+	VoiceSets["gstring_bankster"]["DeathSounds"] = {
+		Sound("vo/gstring_bankster/banksterdeath.wav"),
+		Sound("vo/gstring_bankster/banksterdeath1.wav"),
+		Sound("vo/gstring_bankster/banksterdeath2.wav"),
+		Sound("vo/gstring_bankster/banksterdeath3.wav"),
+		Sound("vo/gstring_bankster/banksterdeath4.wav"),
+		Sound("vo/gstring_bankster/banksterdeath5.wav"),
+	}
+	
+	VoiceSets["gstring_police"] = {}
+	VoiceSets["gstring_police"]["PainSoundsLight"] = {
+		Sound("vo/gstring_police/pain1.wav"),
+		Sound("vo/gstring_police/pain2.wav"),
+		Sound("vo/gstring_police/pain3.wav"),
+		Sound("vo/gstring_police/pain4.wav"),
+		Sound("vo/gstringv2_police/ba_pain01.wav"),
+		Sound("vo/gstringv2_police/ba_pain02.wav"),
+		Sound("vo/gstringv2_police/ba_pain03.wav"),
+		Sound("vo/gstringv2_police/ba_pain04.wav"),
+		Sound("vo/gstringv2_police/ba_pain05.wav"),
+		Sound("vo/gstringv2_police/ba_pain06.wav"),
+		Sound("vo/gstringv2_police/ba_pain07.wav"),
+		Sound("vo/gstringv2_police/ba_pain08.wav"),
+		Sound("vo/gstringv2_police/ba_pain09.wav"),
+		Sound("vo/gstringv2_police/ba_pain10.wav"),
+	}
+	VoiceSets["gstring_police"]["PainSoundsMed"] = {
+		Sound("vo/gstring_police/pain1.wav"),
+		Sound("vo/gstring_police/pain2.wav"),
+		Sound("vo/gstring_police/pain3.wav"),
+		Sound("vo/gstring_police/pain4.wav"),
+		Sound("vo/gstringv2_police/ba_pain01.wav"),
+		Sound("vo/gstringv2_police/ba_pain02.wav"),
+		Sound("vo/gstringv2_police/ba_pain03.wav"),
+		Sound("vo/gstringv2_police/ba_pain04.wav"),
+		Sound("vo/gstringv2_police/ba_pain05.wav"),
+		Sound("vo/gstringv2_police/ba_pain06.wav"),
+		Sound("vo/gstringv2_police/ba_pain07.wav"),
+		Sound("vo/gstringv2_police/ba_pain08.wav"),
+		Sound("vo/gstringv2_police/ba_pain09.wav"),
+		Sound("vo/gstringv2_police/ba_pain10.wav"),
+	}
+	VoiceSets["gstring_police"]["PainSoundsHeavy"] = {
+		Sound("vo/gstring_police/pain1.wav"),
+		Sound("vo/gstring_police/pain2.wav"),
+		Sound("vo/gstring_police/pain3.wav"),
+		Sound("vo/gstring_police/pain4.wav"),
+		Sound("vo/gstringv2_police/ba_pain01.wav"),
+		Sound("vo/gstringv2_police/ba_pain02.wav"),
+		Sound("vo/gstringv2_police/ba_pain03.wav"),
+		Sound("vo/gstringv2_police/ba_pain04.wav"),
+		Sound("vo/gstringv2_police/ba_pain05.wav"),
+		Sound("vo/gstringv2_police/ba_pain06.wav"),
+		Sound("vo/gstringv2_police/ba_pain07.wav"),
+		Sound("vo/gstringv2_police/ba_pain08.wav"),
+		Sound("vo/gstringv2_police/ba_pain09.wav"),
+		Sound("vo/gstringv2_police/ba_pain10.wav"),
+		Sound("vo/gstringv2_police/ba_ohshit03.wav"),
+	}
+	VoiceSets["gstring_police"]["DeathSounds"] = {
+		Sound("vo/gstring_police/die1.wav"),
+		Sound("vo/gstring_police/die2.wav"),
+		Sound("vo/gstring_police/die3.wav"),
+		Sound("vo/gstring_police/die4.wav"),
+	}
+	
+	VoiceSets["gstring_soldier"] = {}
+	VoiceSets["gstring_soldier"]["PainSoundsLight"] = {
+		Sound("vo/gstring_soldier/pain1.wav"),
+		Sound("vo/gstring_soldier/pain2.wav"),
+		Sound("vo/gstring_soldier/pain3.wav"),
+	}
+	VoiceSets["gstring_soldier"]["PainSoundsMed"] = {
+		Sound("vo/gstring_soldier/pain1.wav"),
+		Sound("vo/gstring_soldier/pain2.wav"),
+		Sound("vo/gstring_soldier/pain3.wav"),
+	}
+	VoiceSets["gstring_soldier"]["PainSoundsHeavy"] = {
+		Sound("vo/gstring_soldier/pain1.wav"),
+		Sound("vo/gstring_soldier/pain2.wav"),
+		Sound("vo/gstring_soldier/pain3.wav"),
+	}
+	VoiceSets["gstring_soldier"]["DeathSounds"] = {
+		Sound("vo/gstring_soldier/die1.wav"),
+		Sound("vo/gstring_soldier/die2.wav"),
+		Sound("vo/gstring_soldier/die3.wav"),
+	}
+	
+	VoiceSets["gstring_myo"] = {}
+	VoiceSets["gstring_myo"]["PainSoundsLight"] = {
+		Sound("vo/gstring_myo/pl_pain5.wav"),
+		Sound("vo/gstring_myo/pl_pain6.wav"),
+		Sound("vo/gstring_myo/pl_pain7.wav"),
+	}
+	VoiceSets["gstring_myo"]["PainSoundsMed"] = {
+		Sound("vo/gstring_myo/pl_pain5.wav"),
+		Sound("vo/gstring_myo/pl_pain6.wav"),
+		Sound("vo/gstring_myo/pl_pain7.wav"),
+	}
+	VoiceSets["gstring_myo"]["PainSoundsHeavy"] = {
+		Sound("vo/gstring_myo/pl_burnpain1.wav"),
+		Sound("vo/gstring_myo/pl_burnpain2.wav"),
+		Sound("vo/gstring_myo/pl_burnpain3.wav"),
+	}
+	VoiceSets["gstring_myo"]["DeathSounds"] = {
+		Sound("common/null.wav")
+	}
+	
+	VoiceSets["gstring_female"] = {}
+	VoiceSets["gstring_female"]["PainSoundsLight"] = {
+		Sound("vo/gstring_myo/pl_pain5.wav"),
+		Sound("vo/gstring_myo/pl_pain6.wav"),
+		Sound("vo/gstring_myo/pl_pain7.wav"),
+		Sound("vo/gstringv2_nosumer_female/ow01.wav"),
+		Sound("vo/gstringv2_nosumer_female/ow02.wav"),	
+		Sound("vo/gstringv2_nosumer_female/pain01.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain02.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain03.wav"),		
+	}
+	VoiceSets["gstring_female"]["PainSoundsMed"] = {
+		Sound("vo/gstringv2_nosumer_female/ow01.wav"),
+		Sound("vo/gstringv2_nosumer_female/ow02.wav"),	
+		Sound("vo/gstring_myo/pl_pain5.wav"),
+		Sound("vo/gstring_myo/pl_pain6.wav"),
+		Sound("vo/gstring_myo/pl_pain7.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain04.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain05.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain06.wav"),		
+	}
+	VoiceSets["gstring_female"]["PainSoundsHeavy"] = {
+		Sound("vo/gstringv2_nosumer_female/ow01.wav"),
+		Sound("vo/gstringv2_nosumer_female/ow02.wav"),
+		Sound("vo/gstring_myo/pl_burnpain1.wav"),
+		Sound("vo/gstring_myo/pl_burnpain2.wav"),
+		Sound("vo/gstring_myo/pl_burnpain3.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain07.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain08.wav"),
+		Sound("vo/gstringv2_nosumer_female/pain09.wav"),		
+	}
+	VoiceSets["gstring_female"]["DeathSounds"] = {
+		Sound("vo/gstring_nosumer_female/scream_fem.wav"),
+		Sound("vo/gstring_nosumer_female/scream_fem2.wav"),
+		Sound("vo/gstring_nosumer_female/scream_fem3.wav"),
+		Sound("vo/gstring_nosumer_female/scream_femoan.wav"),
+		Sound("vo/gstring_nosumer_female/scream_femshort.wav"),
+	}
+	
+	VoiceSets["gstring_male"] = {}
+	VoiceSets["gstring_male"]["PainSoundsLight"] = {
+		Sound("vo/gstringv2_nosumer_male/ow1.wav"),
+		Sound("vo/gstringv2_nosumer_male/ow2.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain01.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain02.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain03.wav"),
+	}
+	VoiceSets["gstring_male"]["PainSoundsMed"] = {
+		Sound("vo/gstringv2_nosumer_male/ow1.wav"),
+		Sound("vo/gstringv2_nosumer_male/ow2.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain04.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain05.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain06.wav"),
+	}
+	VoiceSets["gstring_male"]["PainSoundsHeavy"] = {
+		Sound("vo/gstringv2_nosumer_male/pain07.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain08.wav"),
+		Sound("vo/gstringv2_nosumer_male/pain09.wav"),
+	}
+	VoiceSets["gstring_male"]["DeathSounds"] = {
+		Sound("common/null.wav")
+	}
+end
+
 function meta:PlayDeathSound()
 	local snds = VoiceSets[self.VoiceSet].DeathSounds
 	self:EmitSound(snds[math.random(1, #snds)])

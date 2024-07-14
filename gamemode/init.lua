@@ -1241,6 +1241,48 @@ VoiceSetTranslate["models/player/male_02.mdl"] = "male"
 VoiceSetTranslate["models/player/male_03.mdl"] = "male"
 VoiceSetTranslate["models/player/male_08.mdl"] = "male"
 
+if file.Exists("models/gstringhumans/group01/dragon_girl_breathing_gear.mdl","GAME") and file.Exists("sound/vo/bs09","GAME") then
+	print("Enabling G-String Voices for ZS")
+	VoiceSetTranslate["models/gstringhumans/group01/dragon_girl_breathing_gear.mdl"] = "gstring_myo"
+	VoiceSetTranslate["models/gstringhumans/group01/dragon_girl.mdl"] = "gstring_myo"
+	VoiceSetTranslate["models/airguard.mdl"] = "gstring_soldier"
+	VoiceSetTranslate["models/bortzbio.mdl"] = "gstring_soldier"
+	VoiceSetTranslate["models/counterai.mdl"] = "gstring_soldier"
+	VoiceSetTranslate["models/murdocksec.mdl"] = "gstring_soldier"
+	VoiceSetTranslate["models/terratrooper.mdl"] = "gstring_soldier"
+	VoiceSetTranslate["models/hazcop.mdl"] = "gstring_police"
+	VoiceSetTranslate["models/gstringhumans/group03/comoff.mdl"] = "gstring_police"
+	VoiceSetTranslate["models/gstringhumans/group01/corp_biosuit.mdl"] = "gstring_police"
+	VoiceSetTranslate["models/joe_bortz.mdl"] = "gstring_bankster"
+	VoiceSetTranslate["models/captain_jools.mdl"] = "gstring_bankster"
+	VoiceSetTranslate["models/gstringhumans/group01/civilian_bio.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group01/suspicious_plateface.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group01/suspicious_weeb.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group02/civilian_biosuit_unmasked.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group02/male_nosumer01.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group02/male_nosumer02.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group02/male_nosumer03.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer05.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer06.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer07.mdl"] = "gstring_male"
+	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer08.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group03/osbourne.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group02/yorgos.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group02/fem_nosumer01.mdl"] = "gstring_female"
+	VoiceSetTranslate["models/gstringhumans/group02/fem_nosumer02.mdl"] = "gstring_female"
+	VoiceSetTranslate["models/gstringhumans/group02/fem_nosumer03.mdl"] = "gstring_female"
+	VoiceSetTranslate["models/gstringhumans/group01/fem_masked.mdl"] = "gstring_female"	
+end
+	
+if file.Exists("models/player/bs09_guardian.mdl","GAME") and file.Exists("sound/vo/bs09","GAME") then
+	print("Enabling Cyber Diver voices for ZS")
+	VoiceSetTranslate["models/player/bs09_guardian.mdl"] = "bs09_guardian"	
+	VoiceSetTranslate["models/player/bs09_medic.mdl"] = "bs09_medic"
+	VoiceSetTranslate["models/player/bs09_psychicer.mdl"] = "bs09_psychicer"
+	VoiceSetTranslate["models/player/bs09_ranger.mdl"] = "bs09_ranger"
+	VoiceSetTranslate["models/player/bs09_sniper.mdl"] = "bs09_sniper"	
+end
+
 function GM:PlayerSpawn(ply)
 	local plyteam = ply:Team()
 
