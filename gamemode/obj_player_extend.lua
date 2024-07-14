@@ -290,26 +290,43 @@ VoiceSets["female"]["DeathSounds"] = {
 }
 
 VoiceSets["combine"] = {}
-VoiceSets["combine"].PainSoundsLight = {
+VoiceSets["combine"]["PainSoundsLight"] = {
 	Sound("npc/combine_soldier/pain1.wav"),
 	Sound("npc/combine_soldier/pain2.wav"),
 	Sound("npc/combine_soldier/pain3.wav")
 }
 
-VoiceSets["combine"].PainSoundsMed = {
+VoiceSets["combine"]["PainSoundsMed"] = {
 	Sound("npc/metropolice/pain1.wav"),
 	Sound("npc/metropolice/pain2.wav")
 }
 
-VoiceSets["combine"].PainSoundsHeavy = {
+VoiceSets["combine"]["PainSoundsHeavy"] = {
 	Sound("npc/metropolice/pain3.wav"),
 	Sound("npc/metropolice/pain4.wav")
 }
 
-VoiceSets["combine"].DeathSounds = {
+VoiceSets["combine"]["DeathSounds"] = {
 	Sound("npc/combine_soldier/die1.wav"),
 	Sound("npc/combine_soldier/die2.wav"),
 	Sound("npc/combine_soldier/die3.wav")
+}
+
+VoiceSets["null"] = {}
+VoiceSets["null"]["PainSoundsLight"] = {
+	Sound("common/null.wav")
+}
+
+VoiceSets["null"]["PainSoundsMed"] = {
+	Sound("common/null.wav")
+}
+
+VoiceSets["null"]["PainSoundsHeavy"] = {
+	Sound("common/null.wav")
+}
+
+VoiceSets["null"]["DeathSounds"] = {
+	Sound("common/null.wav")
 }
 
 function meta:PlayDeathSound()

@@ -60,6 +60,10 @@ GM.Author = "JetBoom"
 GM.Email = "jetboom@yahoo.com"
 GM.Website = "www.noxiousnet.com"
 
+GM.CleanupFilter = {
+	"zs_hands"
+}
+
 -- Same as above.
 -- if SERVER and GM.SubVersion == "Official" and util.CRC(file.Read("../gamemodes/zombiesurvival/gamemode/zs_options.lua")) ~= "1897461897" then
 -- 	GM.SubVersion = "Modified"

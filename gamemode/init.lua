@@ -1150,6 +1150,11 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 		end
 		ply.SpawnedTime = nil
 		self:CalculateInfliction()
+		
+		local hands = ply:GetHands()
+		if IsValid(hands) then
+			hands:Remove()
+		end
 	end
 
 	if revive then return end
@@ -1274,6 +1279,12 @@ function GM:PlayerSpawn(ply)
 		ply:SetNoTarget(true)
 		ply:SendLua("ZomC()")
 		ply:SetMaxHealth(1) -- To prevent picking up health packs
+		
+		local oldhands = ply:GetHands()
+		if IsValid(oldhands) then
+			oldhands:Remove()
+		end
+		
 		if INFLICTION < 0.5 then
 			SpawnProtection(ply, 5 - INFLICTION * 5) -- Less infliction, more spawn protection.
 		end
@@ -1284,7 +1295,7 @@ function GM:PlayerSpawn(ply)
 			modelname = "models/player/alyx.mdl"
 		end
 		ply:SetModel(modelname)
-		ply.VoiceSet = VoiceSetTranslate[modelname] or "male"
+		ply.VoiceSet = VoiceSetTranslate[modelname] or "null"
 		self:SetPlayerSpeed(ply, 200)//170)
 		for _, wep in pairs(self.STARTLOADOUTS[math.random(1, #self.STARTLOADOUTS)]) do
 			ply:Give(wep)
@@ -1292,7 +1303,23 @@ function GM:PlayerSpawn(ply)
 		ply:SetNoTarget(false)
 		ply:SendLua("HumC()")
 		ply:SetMaxHealth(100)
+		
+		local oldhands = ply:GetHands()
+		if IsValid(oldhands) then
+			oldhands:Remove()
+		end
+
+		local hands = ents.Create("zs_hands")
+		if hands:IsValid() then
+			hands:DoSetup(ply)
+			hands:Spawn()
+		end
 	else
+		local oldhands = ply:GetHands()
+		if IsValid(oldhands) then
+			oldhands:Remove()
+		end
+		
 		BanIdiot(ply)
 	end
 

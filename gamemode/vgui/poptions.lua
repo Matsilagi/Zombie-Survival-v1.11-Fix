@@ -100,10 +100,15 @@ function MakepOptions()
 		RunConsoleCommand("_zs_filmgrainopacity", val)
 	end
 
-
 	local button = vgui.Create("DButton", Window)
 	button:SetPos(wide * 0.5 - 70, Window:GetTall() - 64)
 	button:SetSize(140, 32)
 	button:SetText("Close")
 	button.DoClick = function(btn) btn:GetParent():SetVisible(false) end
+	
+	local button2 = vgui.Create("DButton", Window)
+	button2:SetPos(wide * 0.5 + 170, Window:GetTall() - 64)
+	button2:SetSize(140, 32)
+	button2:SetText("Open Playermodel Selector")
+	button2.DoClick = function(btn) RunConsoleCommand("playermodel_selector") btn:GetParent():SetVisible(false) end
 end

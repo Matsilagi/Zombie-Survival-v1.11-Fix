@@ -412,6 +412,17 @@ end
 
 function GM:CalcView(ply, pos, ang, _fov)
 	local ply = LocalPlayer()
+	local Vehicle	= ply:GetVehicle()
+	local Weapon	= ply:GetActiveWeapon()
+	
+	local view = {
+		["origin"] = pos,
+		["angles"] = ang,
+		["fov"] = _fov,
+		["znear"] = znear,
+		["zfar"] = zfar,
+		["drawviewer"] = false,
+	}
 
 	if not ply:IsValid() then return end
 
@@ -436,8 +447,29 @@ function GM:CalcView(ply, pos, ang, _fov)
 			pos = pos - Vector(0, 0, 30)
 		end
 	end
+		
+	--
+	-- Let the vehicle override the view and allows the vehicle view to be hooked
+	--
+	if ( IsValid( Vehicle ) ) then return hook.Run( "CalcVehicleView", Vehicle, ply, view ) end
 
-	return {origin = pos, angles = ang, fov = _fov}
+	--
+	-- Let drive possibly alter the view
+	--
+	if ( drive.CalcView( ply, view ) ) then return view end
+	
+	-- Give the active weapon a go at changing the view
+	if ( IsValid( Weapon ) ) then
+
+		local func = Weapon.CalcView
+		if ( func ) then
+			local origin, angles, fov = func( Weapon, ply, Vector( view.origin ), Angle( view.angles ), view.fov ) -- Note: Constructor to copy the object so the child function can't edit it.
+			view.origin, view.angles, view.fov = origin or view.origin, angles or view.angles, fov or view.fov
+		end
+
+	end
+
+	return view
 end
 
 function GM:CreateMove(cmd)
@@ -703,6 +735,29 @@ function GM:KeyPress(ply, key)
 		local ent = util.TraceLine({start = ply:EyePos(), endpos = ply:EyePos() + ply:GetAimVector() * 50, filter = ply}).Entity
 		if ent and ent:IsValid() and ent:IsPlayer() then
 			RunConsoleCommand("shove", ent:EntIndex())
+		end
+	end
+end
+
+function GM:PreDrawViewModel(vm, pl, wep)
+	if pl and pl:IsValid() and pl:IsHolding() then return true end
+
+	if wep and wep:IsValid() and wep.PreDrawViewModel then
+		return wep:PreDrawViewModel(vm)
+	end
+end
+
+function GM:PostDrawViewModel(vm, pl, wep)
+	if wep and wep:IsValid() then
+		if wep.UseHands or not wep:IsScripted() then
+			local hands = pl:GetHands()
+			if hands and hands:IsValid() then
+				hands:DrawModel()
+			end
+		end
+
+		if wep.PostDrawViewModel then
+			wep:PostDrawViewModel(vm)
 		end
 	end
 end

@@ -25,8 +25,10 @@ end
 ----------------------------------
 
 GM.STARTLOADOUTS = {
-{"weapon_zs_battleaxe", "weapon_zs_swissarmyknife"},
-{"weapon_zs_peashooter", "weapon_zs_swissarmyknife"}
+{"weapon_swcs_fists","weapon_swcs_hkp2000"},
+{"weapon_swcs_fists","weapon_swcs_glock"},
+{"weapon_swcs_fists","weapon_swcs_usp"},
+{"weapon_swcs_fists","weapon_swcs_usp_silencer"},
 }
 
 -----------------------------------
@@ -38,13 +40,13 @@ GM.STARTLOADOUTS = {
 -- Changing these means you're most likely an idiot.
 
 GM.Rewards = {} -- Leave this.
-GM.Rewards[GetConVar("zs_rewards_1", 2):GetInt()] = {"weapon_zs_deagle", "weapon_zs_deagle", "weapon_zs_glock3", "weapon_zs_glock3", "weapon_zs_magnum"}
+GM.Rewards[GetConVar("zs_rewards_1", 2):GetInt()] = {"weapon_swcs_p250", "weapon_swcs_elite", "weapon_swcs_tec9", "weapon_swcs_sword"}
 GM.Rewards[GetConVar("zs_rewards_2", 4):GetInt()] = {"_Heal", "_Heal", "_Shell"}
-GM.Rewards[GetConVar("zs_rewards_3", 6):GetInt()] = {"weapon_zs_uzi", "weapon_zs_uzi", "weapon_zs_crossbow", "weapon_zs_smg"}
-GM.Rewards[GetConVar("zs_rewards_4", 8):GetInt()] = {"weapon_zs_sweepershotgun", "weapon_zs_slugrifle"}
+GM.Rewards[GetConVar("zs_rewards_3", 6):GetInt()] = {"weapon_swcs_mp7", "weapon_swcs_mp9", "weapon_swcs_mp7", "weapon_swcs_mp9"}
+GM.Rewards[GetConVar("zs_rewards_4", 8):GetInt()] = {"weapon_swcs_m3", "weapon_swcs_sawedoff"}
 GM.Rewards[GetConVar("zs_rewards_5", 10):GetInt()] = {"weapon_zs_barricadekit"}
 GM.Rewards[GetConVar("zs_rewards_6", 12):GetInt()] = {"_Regeneration", "_Heal"}
-GM.Rewards[GetConVar("zs_rewards_7", 14):GetInt()] = {"weapon_slam"}
+GM.Rewards[GetConVar("zs_rewards_7", 14):GetInt()] = {"weapon_swcs_breachcharge"}
 
 ----------------------------------
 --		AMMO REGENERATION		--
