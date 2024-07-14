@@ -1,7 +1,7 @@
 # Welcome to Zombie Survival v1.11 Fix! Matsilagi's CS:GO edition.
 As much as i like what Xalalau did with the gamemode fixes and restoration, i feel like some of the changes were a bit TOO much regressive and inconvenient, so, i've restored what i needed / felt like was necessary to keep the gamemode rolling.
 
-I also replaced the ZS weapons with CS:GO ones made using the [SWCS Base](https://gitlab.com/cynhole/swcs). They are VERY network performant, accurate to the sourcecode, with original spreads and CS:GO features. Seeing how ZS originally aimed to replicate CS:S elements into its gameplay cycle. I feel like having CS:GO stuff is both more modern and a step on the right direction for this project.
+I also replaced the ZS weapons with CS:GO ones made using the [SWCS Base](https://gitlab.com/cynhole/swcs). They are VERY network performant, accurate to the sourcecode, with original spreads and CS:GO features, seeing how ZS originally aimed to replicate CS:S elements into its gameplay cycle. I feel like having CS:GO stuff is both more modern and a step on the right direction for this project.
 
 With that said, the original description doesn't apply much, so here it is, quoted and unaltered:
 
