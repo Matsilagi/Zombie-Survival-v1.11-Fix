@@ -1,5 +1,6 @@
 # Welcome to Zombie Survival v1.11 Fix! Matsilagi's CS:GO edition.
 As much as i like what Xalalau did with the gamemode fixes and restoration, i feel like some of the changes were a bit TOO much regressive and inconvenient, so, i've restored what i needed / felt like was necessary to keep the gamemode rolling.
+
 I also replaced the ZS weapons with CS:GO ones made using the [SWCS Base](https://gitlab.com/cynhole/swcs). They are VERY network performant, accurate to the sourcecode, with original spreads and CS:GO features. Seeing how ZS originally aimed to replicate CS:S elements into its gameplay cycle. I feel like having CS:GO stuff is both more modern and a step on the right direction for this project.
 
 With that said, the original description doesn't apply much, so here it is, quoted and unaltered:
@@ -332,7 +333,8 @@ Changes from v1.0 -> v1.01
 #Credits
 
 Whoever contributed with this before me and:
- - homonovus: SWCS Base. Quite frankly, without it, this wouldn't exist. He also helped me fix the CalcView() problem. Good times.
- - My cat: Being an annoying prick while i work and also keeping my mental for the code.
- - Diamond Doves Discord Server: Being there, lots of nice people.
- - Fesiug: WIP Sandbox buy menu system.
+
+- homonovus: SWCS Base. Quite frankly, without it, this wouldn't exist. He also helped me fix the CalcView() problem. Good times.
+- My cat: Being an annoying prick while i work and also keeping my mental for the code.
+- Diamond Doves Discord Server: Being there, lots of nice people.
+- Fesiug: WIP Sandbox buy menu system.
