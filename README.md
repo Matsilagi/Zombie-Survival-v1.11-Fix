@@ -55,6 +55,10 @@ Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Som
 # v1.11 Fix by Matsilagi's exclusive changes
 
 ```
+2024/07/14
+	* Added custom voices for G-String Playermodels and Cyber Diver playermodels (Soon to be included in a ZS Customs pack for my personal branch of this gamemode).
+	* Started categorizing valve-friendly playermodels to have voice packs.
+
 2024/07/13
 	* Integrated c_model support for Hands. (Seriously, i understand not wanting to be a modern ZS implementation, but that's just silly, atleast force the c_ hands to CS:S ones instead of not fixing them at all.)
 	* Re-integrated a playermodel selection menu.
@@ -68,6 +72,7 @@ Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Som
 # My plans for the future of this branch
 
 ```
+	* Fix Enhanced Player Model Selector updating voice packs with this gamemode.
 	* Add Outfitter support (just to not bloat my Server with the Anime playermodels i use, ooo scary.)
 	* Keep up with main branch (requirement, obviously, if its a bugfix which gets in the way of my "modernization", i'll try to either adapt it to my code or ignore entirely)
 	* Categorize other Valve official or lore-friendly playermodels. (Detect if a game is mounted, and if it is, add voicelines to use with their playermodels. Also add support for Valve stuff on the workshop such as Portal 2, Half-Life 2 - Survivor [Arcade HL2 Ver], Cyber Diver V2 [Arcade Game based on Source Engine by Taito], E.Y.E Divine Cybermancy [Classic Source-based standalone game], CS:S and so on.)
