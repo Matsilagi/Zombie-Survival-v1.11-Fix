@@ -72,6 +72,7 @@ Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Som
 	* Keep up with main branch (requirement, obviously, if its a bugfix which gets in the way of my "modernization", i'll try to either adapt it to my code or ignore entirely)
 	* Categorize other Valve official or lore-friendly playermodels. (Detect if a game is mounted, and if it is, add voicelines to use with their playermodels. Also add support for Valve stuff on the workshop such as Portal 2, Half-Life 2 - Survivor [Arcade HL2 Ver], Cyber Diver V2 [Arcade Game based on Source Engine by Taito], E.Y.E Divine Cybermancy [Classic Source-based standalone game], CS:S and so on.)
 	* Other fun stuff (Use Sandbox addons to add more content and features to the existing gamemode base, currently uses a buymenu from Sandbox, but i plan to have a better one in the near-future.)
+	= Add support for Objective (zs_obj_), Zombie Master (zm_), Zombie Escape (ze_) and similar maps. (Focus is on Objective maps since its kinda official, if not supported)
 ```
 
 # v1.11 Fix by Xalalau & collaborators changelog
