@@ -330,7 +330,7 @@ Changes from v1.0 -> v1.01
     * Fixed chem-zombies not exploding properly. 
 ```
 
-#Credits
+# Credits
 
 Whoever contributed with this before me and:
 
