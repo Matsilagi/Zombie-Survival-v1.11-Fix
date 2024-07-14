@@ -1292,7 +1292,7 @@ function GM:PlayerSpawn(ply)
 		//ply.PlayerFootstep = nil
 		local modelname = string.lower(player_manager.TranslatePlayerModel(ply:GetInfo("cl_playermodel")))
 		if self.RestrictedModels[modelname] then
-			modelname = "models/player/alyx.mdl"
+			modelname = "models/player/qplayer.mdl"
 		end
 		ply:SetModel(modelname)
 		ply.VoiceSet = VoiceSetTranslate[modelname] or "null"
