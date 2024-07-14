@@ -1,5 +1,10 @@
-# Welcome to Zombie Survival v1.11 Fix!
+# Welcome to Zombie Survival v1.11 Fix! Matsilagi's CS:GO edition.
+As much as i like what Xalalau did with the gamemode fixes and restoration, i feel like some of the changes were a bit TOO much regressive and inconvenient, so, i've restored what i needed / felt like was necessary to keep the gamemode rolling.
+I also replaced the ZS weapons with CS:GO ones made using the [SWCS Base](https://gitlab.com/cynhole/swcs). They are VERY network performant, accurate to the sourcecode, with original spreads and CS:GO features. Seeing how ZS originally aimed to replicate CS:S elements into its gameplay cycle. I feel like having CS:GO stuff is both more modern and a step on the right direction for this project.
 
+With that said, the original description doesn't apply much, so here it is, quoted and unaltered:
+
+```
 Hey! I was there, in 2008, playing on the classic ZS servers, and I saw the day when simplicity was replaced by overkill! [JetBoom](https://steamcommunity.com/id/jetboom) evolved his awesome creation, GMod's Zombie Survival, into a very tumultuous and complex gamemode, full of anime girl skins, hats, particles, UI elements and timers - my simian brain simply couldn't keep up! That said, I always really missed that raw feeling of the old ZS, where I had nowhere to run, almost nothing to protect myself, all the models were the default ones and I didn't have to think about the game's progress, I just had to kill to be automatically rewarded! I confess that this gameplay is a little too raw, but it's really fun and easy to understand!
 
 So here we are! I want to give my HUGE appreciation and thanks to [Yushe](http://steamcommunity.com/profiles/76561198360846296) and [Soldier](http://steamcommunity.com/profiles/76561198325469923), who have kept a lot of original files **to this day** and still maintain a classic ZS server with a proprietary fixed version. Thanks to their kindness in granting my request to reopen the original ZS to the public, I was able to begin my effort on this repository! After that, all I needed was free time, and over the weekends the work gradually got done.
@@ -9,20 +14,26 @@ I consider my changes a Fix to the original gamemode and also a light Adaptation
 And thank you all very much! I hope you enjoy this gamemode as much as I do.
 
 > 4 the Devs: would you like to contribute to this base with **new features**? Well, fork it and create your own ZS!! I won't accept these PRs here because they'll actually ruin the restoration. Advances must be made elsewhere! But if you want to contribute following the repo main goals, go ahead. Here are the commits golden rules: 1) Commits cannot change the original experience, even if you want to fix bugs like moonwalk; 2) We can fix bugs that prevent the game from running; 3) We must port deprecated code from GMod 11 to the current GMod; 4) We may change internal code to make our lives easier, but don't try to fix the spaghetti because I won't accept it.
+```
 
 # How to install and use
 
-Everything is in the Steam Worskhop! Get the base addon and take a look at its description:
+Differently from the original, the requirements are changed. Below you can grab the OG gamemode. 
 
 - [Zombie Survival v1.11 Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=3278538690)
 
-Extra downloads (for a complete experience):
+For now, the only way to play my version is by going on the "Code" tab on the GitHub website, and clicking on "zip", then extracting the zip gamemodes folder to a folder in addons.
 
-- [ZS v1.11 CSS Weapons Replacement](https://steamcommunity.com/workshop/filedetails/?id=3278214014)
-- [ZS v1.11 Map Pack](https://steamcommunity.com/workshop/filedetails/?id=3278214930)
-- [ZS v1.11 Mapvote](https://steamcommunity.com/workshop/filedetails/?id=3285251001)
-- [ZS v1.11 Gamemode Content](https://steamcommunity.com/workshop/filedetails/?id=3285258150)
-- [ZS v1.11 LeadBots](https://steamcommunity.com/sharedfiles/filedetails/?id=3286664671)
+There is also this collection, which will serve for my play sessions when i host them:
+- [Coming Soon](about:blank)
+
+Extra downloads (Companions mostly to make the experience easy to deploy and play):
+
+- [ZS v1.11 CSS Weapons Replacement](https://steamcommunity.com/workshop/filedetails/?id=3278214014) -- Quite frankly, i expect players to own CS:S or use the SteamCMD method to get the CS:S content mounted. It shouldn't be required but errors might appear. (Even with it)
+- [ZS v1.11 Map Pack](https://steamcommunity.com/workshop/filedetails/?id=3278214930) -- Optional. Has lots of maps which were played back then and might help setting up a server faster.
+- [ZS v1.11 Mapvote](https://steamcommunity.com/workshop/filedetails/?id=3285251001) -- Required for hosts/server owners, clients can ignore this.
+- [ZS v1.11 Gamemode Content](https://steamcommunity.com/workshop/filedetails/?id=3285258150) -- Required for both Servers and Clients. Actual gamemode content.
+- [ZS v1.11 LeadBots](https://steamcommunity.com/sharedfiles/filedetails/?id=3286664671) -- Optional, for Single Player or testing purposes. Bots which help testing or filling slots. Highly unoptimzed and heavy.
 
 # Original files and gameplay
 
@@ -39,6 +50,28 @@ You can play Yushe's classic ZS version every weekend at ToxicGaming Discord ser
 https://discord.gg/mK2swJUZVf
 
 Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Some-urls-and-info) for more official stuff.
+
+# v1.11 Fix by Matsilagi's exclusive changes
+
+```
+2024/07/13
+	* Integrated c_model support for Hands. (Seriously, i understand not wanting to be a modern ZS implementation, but that's just silly, atleast force the c_ hands to CS:S ones instead of not fixing them at all.)
+	* Re-integrated a playermodel selection menu.
+	* Added a null voiceline for non-categorized playermodels. (I plan on categorized every "Valve official" playermodel properly in due time using Workshop packs. For now, this is a WIP and only has the default playermodels it had organized.)
+	* Fixed (?) Combine voicelines.
+	* Changed most of the weapons and rewards to SWCS/CS:GO ones. (Main Pack, Extras, Noble Strike and Custom ones used)
+	* Changed starting loadouts. (4 possible pistol options when spawning: Glock 18, CS:GO Alpha USP, HK P2000 and USP-S, you also don't have a knife anymore, gotta buy it. Good luck!)
+	* Fixed CalcView to support weapon bases or addon modifications. (It used to ignore hook changes, i made it work like GM13's default implementation, so its hijackable again, go NUTS.WAD)
+```
+
+# My plans for the future of this branch
+
+```
+	* Add Outfitter support (just to not bloat my Server with the Anime playermodels i use, ooo scary.)
+	* Keep up with main branch (requirement, obviously, if its a bugfix which gets in the way of my "modernization", i'll try to either adapt it to my code or ignore entirely)
+	* Categorize other Valve official or lore-friendly playermodels. (Detect if a game is mounted, and if it is, add voicelines to use with their playermodels. Also add support for Valve stuff on the workshop such as Portal 2, Half-Life 2 - Survivor [Arcade HL2 Ver], Cyber Diver V2 [Arcade Game based on Source Engine by Taito], E.Y.E Divine Cybermancy [Classic Source-based standalone game], CS:S and so on.)
+	* Other fun stuff (Use Sandbox addons to add more content and features to the existing gamemode base, currently uses a buymenu from Sandbox, but i plan to have a better one in the near-future.)
+```
 
 # v1.11 Fix by Xalalau & collaborators changelog
 
@@ -295,3 +328,11 @@ Changes from v1.01 -> v1.02
 Changes from v1.0 -> v1.01
     * Fixed chem-zombies not exploding properly. 
 ```
+
+#Credits
+
+Whoever contributed with this before me and:
+ - homonovus: SWCS Base. Quite frankly, without it, this wouldn't exist. He also helped me fix the CalcView() problem. Good times.
+ - My cat: Being an annoying prick while i work and also keeping my mental for the code.
+ - Diamond Doves Discord Server: Being there, lots of nice people.
+ - Fesiug: WIP Sandbox buy menu system.
