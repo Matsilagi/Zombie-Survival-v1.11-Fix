@@ -1403,6 +1403,14 @@ if file.Exists("models/player/combine_elite_legacy.mdl") then
 	VoiceSetTranslate["models/player/combine_elite_legacy.mdl"] = "combine"
 end
 
+if file.Exists("models/player/combine_soldier_prisonguard.mdl") then
+	print("Enabling Improtved Default Playermodel Voices for ZS")
+	VoiceSetTranslate["models/player/combine_soldier_prisonguard.mdl"] = "combine"
+	VoiceSetTranslate["models/player/group03/male_09.mdl"] = "male"
+	VoiceSetTranslate["models/humans/group03/male_09_bloody.mdl"] = "male"
+	VoiceSetTranslate["models/humans/group03/male_09.mdl"] = "male"
+end
+
 function GM:PlayerSpawn(ply)
 	local plyteam = ply:Team()
 
