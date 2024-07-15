@@ -111,4 +111,10 @@ function MakepOptions()
 	button2:SetSize(140, 32)
 	button2:SetText("Open Playermodel Selector")
 	button2.DoClick = function(btn) RunConsoleCommand("playermodel_selector") btn:GetParent():SetVisible(false) end
+	
+	local button3 = vgui.Create("DButton", Window)
+	button3:SetPos(wide * 0.5 + 170, Window:GetTall() - 110)
+	button3:SetSize(140, 32)
+	button3:SetText("Open Outfitter")
+	button3.DoClick = function(btn) RunConsoleCommand("outfitter") btn:GetParent():SetVisible(false) end
 end
