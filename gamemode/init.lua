@@ -1384,7 +1384,23 @@ if file.Exists("models/player/jailbreak_combine_soldier.mdl") then
 	VoiceSetTranslate["models/player/jailbreak_female_05.mdl"] = "female"
 	VoiceSetTranslate["models/player/jailbreak_female_06.mdl"] = "female"
 	VoiceSetTranslate["models/player/jailbreak_female_07.mdl"] = "female"
-	--TODO: Add Dinosaurs and Robots
+	if file.Exists("sound/vo/bs09","GAME") then
+		VoiceSetTranslate["models/player/jailbreak_female_robot_mk2.mdl"] = "jb_robot"
+		VoiceSetTranslate["models/player/jailbreak_fodder.mdl"] = "jb_robot"
+		VoiceSetTranslate["models/player/jailbreak_parasaur.mdl"] = "jb_dino"
+		VoiceSetTranslate["models/player/jailbreak_raptor.mdl"] = "jb_dino"
+	end
+end
+
+if file.Exists("models/player/classic_combine_prisonguard.mdl") then
+	print("Enabling Classic Playermodel Voices for ZS")
+	VoiceSetTranslate["models/player/classic_combine_prisonguard.mdl"] = "combine"
+	VoiceSetTranslate["models/player/classic_combine_shotgun.mdl"] = "combine"
+end
+
+if file.Exists("models/player/combine_elite_legacy.mdl") then
+	print("Enabling HL2DM 2010 Combine Elite Voices for ZS"
+	VoiceSetTranslate["models/player/combine_elite_legacy.mdl"] = "combine"
 end
 
 function GM:PlayerSpawn(ply)

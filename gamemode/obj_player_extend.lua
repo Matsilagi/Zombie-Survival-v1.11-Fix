@@ -637,6 +637,44 @@ if file.Exists("sound/vo/bs09","GAME") then
 	VoiceSets["gstring_male"]["DeathSounds"] = {
 		Sound("common/null.wav")
 	}
+	
+	VoiceSets["jb_robot"] = {}
+	VoiceSets["jb_robot"]["PainSoundsLight"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_robot"]["PainSoundsMed"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_robot"]["PainSoundsHeavy"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_robot"]["DeathSounds"] = {
+		Sound("vo/jb_robots/pain07.wav"),
+		Sound("vo/jb_robots/pain08.wav"),
+		Sound("vo/jb_robots/pain09.wav")
+	}
+	
+	VoiceSets["jb_dino"] = {}
+	VoiceSets["jb_dino"]["PainSoundsLight"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_dino"]["PainSoundsMed"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_dino"]["PainSoundsHeavy"] = {
+		Sound("common/null.wav")
+	}
+
+	VoiceSets["jb_dino"]["DeathSounds"] = {
+		Sound("vo/jb_dino/pain07.wav"),
+		Sound("vo/jb_dino/pain08.wav"),
+		Sound("vo/jb_dino/pain09.wav")
+	}
 end
 
 function meta:PlayDeathSound()
