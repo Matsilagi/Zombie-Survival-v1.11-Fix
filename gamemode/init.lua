@@ -1399,7 +1399,7 @@ if file.Exists("models/player/classic_combine_prisonguard.mdl") then
 end
 
 if file.Exists("models/player/combine_elite_legacy.mdl") then
-	print("Enabling HL2DM 2010 Combine Elite Voices for ZS"
+	print("Enabling HL2DM 2010 Combine Elite Voices for ZS")
 	VoiceSetTranslate["models/player/combine_elite_legacy.mdl"] = "combine"
 end
 
