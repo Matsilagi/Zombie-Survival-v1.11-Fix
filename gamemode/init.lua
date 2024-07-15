@@ -1363,7 +1363,7 @@ if file.Exists("models/player/obsidianconflict/helmet_source.mdl", "GAME") then
 	--TODO: Add hgrunt (maybe?)
 end
 
-if file.Exists("models/player/jailbreak_combine_soldier.mdl") then
+if file.Exists("models/player/jailbreak_combine_soldier.mdl","GAME") then
 	print("Enabling Jailbreak! Source Voices for ZS")
 	VoiceSetTranslate["models/player/jailbreak_combine_soldier.mdl"] = "combine"
 	VoiceSetTranslate["models/player/jailbreak_combine_super_soldier.mdl"] = "combine"
@@ -1392,18 +1392,18 @@ if file.Exists("models/player/jailbreak_combine_soldier.mdl") then
 	end
 end
 
-if file.Exists("models/player/classic_combine_prisonguard.mdl") then
+if file.Exists("models/player/classic_combine_prisonguard.mdl","GAME") then
 	print("Enabling Classic Playermodel Voices for ZS")
 	VoiceSetTranslate["models/player/classic_combine_prisonguard.mdl"] = "combine"
 	VoiceSetTranslate["models/player/classic_combine_shotgun.mdl"] = "combine"
 end
 
-if file.Exists("models/player/combine_elite_legacy.mdl") then
+if file.Exists("models/player/combine_elite_legacy.mdl","GAME") then
 	print("Enabling HL2DM 2010 Combine Elite Voices for ZS")
 	VoiceSetTranslate["models/player/combine_elite_legacy.mdl"] = "combine"
 end
 
-if file.Exists("models/player/combine_soldier_prisonguard.mdl") then
+if file.Exists("models/player/combine_soldier_prisonguard.mdl","GAME") then
 	print("Enabling Improtved Default Playermodel Voices for ZS")
 	VoiceSetTranslate["models/player/combine_soldier_prisonguard.mdl"] = "combine"
 	VoiceSetTranslate["models/player/group03/male_09.mdl"] = "male"
