@@ -1267,7 +1267,7 @@ if file.Exists("models/gstringhumans/group01/dragon_girl_breathing_gear.mdl","GA
 	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer07.mdl"] = "gstring_male"
 	VoiceSetTranslate["models/gstringhumans/group03/male_nosumer08.mdl"] = "gstring_male"	
 	VoiceSetTranslate["models/gstringhumans/group03/osbourne.mdl"] = "gstring_bankster"	
-	VoiceSetTranslate["models/gstringhumans/group02/yorgos.mdl"] = "gstring_male"	
+	VoiceSetTranslate["models/gstringhumans/group02/yorgos.mdl"] = "gstring_female"	
 	VoiceSetTranslate["models/gstringhumans/group03/admiral_scoble.mdl"] = "gstring_soldier"
 	VoiceSetTranslate["models/gstringhumans/group02/fem_nosumer01.mdl"] = "gstring_female"
 	VoiceSetTranslate["models/gstringhumans/group02/fem_nosumer02.mdl"] = "gstring_female"
