@@ -181,6 +181,10 @@ function GM:GetGameDescription()
 	return self.Name
 end
 
+function GM:GetHandsModel(pl)
+	return player_manager.TranslatePlayerHands(player_manager.TranslateToPlayerModelName(pl:GetModel()))
+end
+
 function GM:PlayerTraceAttack(ply, dmginfo, dir, trace)
 	return false
 end

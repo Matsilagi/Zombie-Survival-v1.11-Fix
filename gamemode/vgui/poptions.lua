@@ -110,11 +110,11 @@ function MakepOptions()
 	button2:SetPos(wide * 0.5 + 170, Window:GetTall() - 64)
 	button2:SetSize(140, 32)
 	button2:SetText("Open Playermodel Selector")
-	button2.DoClick = function(btn) RunConsoleCommand("playermodel_selector") btn:GetParent():SetVisible(false) end
+	button2.DoClick = function(btn) local ply = LocalPlayer() if ply:Team() == TEAM_HUMAN then RunConsoleCommand("playermodel_selector") btn:GetParent():SetVisible(false) else ply:ChatPrint("This team cannot change playermodel.") end end
 	
 	local button3 = vgui.Create("DButton", Window)
 	button3:SetPos(wide * 0.5 + 170, Window:GetTall() - 110)
 	button3:SetSize(140, 32)
 	button3:SetText("Open Outfitter")
-	button3.DoClick = function(btn) RunConsoleCommand("outfitter") btn:GetParent():SetVisible(false) end
+	button3.DoClick = function(btn) local ply = LocalPlayer() if ply:Team() == TEAM_HUMAN then RunConsoleCommand("outfitter") btn:GetParent():SetVisible(false) else ply:ChatPrint("This team cannot change playermodel.") end end
 end

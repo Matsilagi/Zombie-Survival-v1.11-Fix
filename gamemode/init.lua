@@ -737,7 +737,7 @@ function GM:PlayerInitialSpawn(ply)
 	if DeadSteamIDs[ply:SteamID()] then
 		ply:SetTeam(TEAM_UNDEAD)
 	elseif team.NumPlayers(TEAM_UNDEAD) < 1 and team.NumPlayers(TEAM_HUMAN) >= 3 then
-		local plays = player.GetHumans()
+		local plays = player.GetAll()
 		local newply = plays[math.random(1, #plays)]
 		newply:SetTeam(TEAM_UNDEAD)
 		DeadSteamIDs[newply:SteamID()] = true
@@ -1438,6 +1438,7 @@ function GM:PlayerSpawn(ply)
 		end
 		local class = ply:GetZombieClass()
 		local classtab = ZombieClasses[class]
+		
 		ply:SetModel(classtab.Model)
 		--if team.NumPlayers(TEAM_UNDEAD) <= 1 then
 			--ply:SetHealth(classtab.Health * 2)
@@ -1456,6 +1457,12 @@ function GM:PlayerSpawn(ply)
 			oldhands:Remove()
 		end
 		
+		local hands = ents.Create("zs_hands")
+		if hands:IsValid() then
+			hands:DoSetup(ply)
+			hands:Spawn()
+		end
+		
 		if INFLICTION < 0.5 then
 			SpawnProtection(ply, 5 - INFLICTION * 5) -- Less infliction, more spawn protection.
 		end
@@ -1465,7 +1472,20 @@ function GM:PlayerSpawn(ply)
 		if self.RestrictedModels[modelname] then
 			modelname = "models/player/qplayer.mdl"
 		end
+		
 		ply:SetModel(modelname)
+		
+		local oldhands = ply:GetHands()
+		if IsValid(oldhands) then
+			oldhands:Remove()
+		end
+		
+		local hands = ents.Create("zs_hands")
+		if hands:IsValid() then
+			hands:DoSetup(ply)
+			hands:Spawn()
+		end
+		
 		ply.VoiceSet = VoiceSetTranslate[modelname] or "null"
 		self:SetPlayerSpeed(ply, 200)//170)
 		for _, wep in pairs(self.STARTLOADOUTS[math.random(1, #self.STARTLOADOUTS)]) do
@@ -1474,18 +1494,8 @@ function GM:PlayerSpawn(ply)
 		ply:SetNoTarget(false)
 		ply:SendLua("HumC()")
 		ply:SetMaxHealth(100)
-		
-		local oldhands = ply:GetHands()
-		if IsValid(oldhands) then
-			oldhands:Remove()
-		end
-
-		local hands = ents.Create("zs_hands")
-		if hands:IsValid() then
-			hands:DoSetup(ply)
-			hands:Spawn()
-		end
 	else
+	
 		local oldhands = ply:GetHands()
 		if IsValid(oldhands) then
 			oldhands:Remove()

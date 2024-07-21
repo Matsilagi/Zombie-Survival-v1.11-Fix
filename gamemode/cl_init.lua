@@ -739,14 +739,6 @@ function GM:KeyPress(ply, key)
 	end
 end
 
-function GM:PreDrawViewModel(vm, pl, wep)
-	if pl and pl:IsValid() and pl:IsHolding() then return true end
-
-	if wep and wep:IsValid() and wep.PreDrawViewModel then
-		return wep:PreDrawViewModel(vm)
-	end
-end
-
 function GM:PostDrawViewModel(vm, pl, wep)
 	if wep and wep:IsValid() then
 		if wep.UseHands or not wep:IsScripted() then
