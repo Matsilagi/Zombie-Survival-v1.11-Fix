@@ -771,6 +771,7 @@ function GM:CheckPlayerScore(ply)
 				ply:GiveAmmo(self.AmmoRegeneration[ammotype], ammotype, true)
 			end
 		else
+			if ply:Team() != TEAM_HUMAN then return end
 			ply:Give(reward)
 			local wep = ply:GetWeapon(reward)
 			if wep:IsValid() then
