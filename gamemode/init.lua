@@ -1445,6 +1445,7 @@ function GM:PlayerSpawn(ply)
 		--else
 			ply:SetHealth(classtab.Health)
 		--end
+		ply:StripWeapons()
 		ply:Give(classtab.SWEP)
 		self:SetPlayerSpeed(ply, classtab.Speed)
 		//ply.PlayerFootstep = classtab.PlayerFootstep ~= nil
