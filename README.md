@@ -74,7 +74,7 @@ LEGEND:
 	* (*)Attempt #1 on fixing zombies getting rewarded with human weapons.
 
 2024/07/14
-	* (+)Added custom voices for lots of "Valve-friendly" playermodels (G-String, HL2 Survivor, Cyber Diver, Obsidian Conflict, just to name a few)
+	* (+)Added custom voices for lots of "Valve-friendly" playermodels. (G-String, HL2 Survivor, Cyber Diver, Obsidian Conflict, just to name a few)
 	* (+)Started categorizing valve-friendly playermodels to have voice packs.
 
 2024/07/13
