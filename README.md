@@ -99,9 +99,6 @@ LEGEND:
 # v1.11 Fix by Xalalau & collaborators changelog
 
 ```
-Changes from v1.11 Fix 5 -> v1.11 Fix 6
-    * Changed the first zombie to always be a human and not a bot
-
 Changes from v1.11 Fix 4 -> v1.11 Fix 5
     * Changed most player.GetHumans() back to player.GetAll() to improve bots support
     * Fixed (critical2) gamemode was still failing to get cvar values
