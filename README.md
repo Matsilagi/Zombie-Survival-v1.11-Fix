@@ -68,9 +68,9 @@ LEGEND:
 	* (+)Added GAMEMODE:GetHandsModel() for C_ hands.
 	* (=)Attempted to limit Zombies from changing playermodels + enforcing them.
 	* (-)Reduced the number of addons from the collection and created an additional one for optional content.
-	* (+)Created a separate collection with optional content
+	* (+)Created a separate collection with optional content.
 	* (=)Fixed the mute voicelines not being applied on a model which has none of them.
-	* (=)Fixed some G-String models having wrong voicelines (Extras)
+	* (=)Fixed some G-String models having wrong voicelines. (Extras)
 	* (*)Attempt #1 on fixing zombies getting rewarded with human weapons.
 
 2024/07/14
