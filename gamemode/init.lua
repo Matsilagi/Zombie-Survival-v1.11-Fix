@@ -1489,6 +1489,9 @@ function GM:PlayerSpawn(ply)
 		end
 		
 		ply.VoiceSet = VoiceSetTranslate[modelname] or "null"
+		if VoiceSetTranslate[modelname] == nil then
+			ply.VoiceSet = "null"
+		end
 		self:SetPlayerSpeed(ply, 200)//170)
 		for _, wep in pairs(self.STARTLOADOUTS[math.random(1, #self.STARTLOADOUTS)]) do
 			ply:Give(wep)
