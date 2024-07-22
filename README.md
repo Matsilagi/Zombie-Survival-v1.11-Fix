@@ -25,8 +25,9 @@ Differently from the original, the requirements are changed. Below you can grab 
 
 For now, the only way to play my version is by going on the "Code" tab on the GitHub website, and clicking on "zip", then extracting the zip gamemodes folder to a folder in addons.
 
-There is also this collection, which will serve for my play sessions when i host them:
+There is also this collection and an optional extension, which will serve for my play sessions when i host them:
 - [ZS - Terror Strike Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3289610528)
+- [ZS - Terror Strike Extras](https://steamcommunity.com/sharedfiles/filedetails/?id=2491807724)
 
 Extra downloads (Companions mostly to make the experience easy to deploy and play):
 
@@ -55,18 +56,35 @@ Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Som
 # v1.11 Fix by Matsilagi's exclusive changes
 
 ```
+LEGEND:
++ means addition
+- means removal
+= means fix
+
+2024/07/21
+	* (=)Fixed C_ hands drawing on the gamemode.
+	* (=)Fixed poor C_ hands implementation causing issues.
+	* (=)Fixed zs_hands.lua not working correctly due to missing function
+	* (+)Added GAMEMODE:GetHandsModel() for C_ hands.
+	* (=)Attempted to limit Zombies from changing playermodels + enforcing them.
+	* (-)Reduced the number of addons from the collection and created an additional one for optional content.
+	* (+)Created a separate collection with optional content
+	* (=)Fixed the mute voicelines not being applied on a model which has none of them.
+	* (=)Fixed some G-String models having wrong voicelines (Extras)
+	* (*)Attempt #1 on fixing zombies getting rewarded with human weapons.
+
 2024/07/14
-	* Added custom voices for lots of "Valve-friendly" playermodels (G-String, HL2 Survivor, Cyber Diver, Obsidian Conflict, just to name a few)
-	* Started categorizing valve-friendly playermodels to have voice packs.
+	*  (+)Added custom voices for lots of "Valve-friendly" playermodels (G-String, HL2 Survivor, Cyber Diver, Obsidian Conflict, just to name a few)
+	*  (+)Started categorizing valve-friendly playermodels to have voice packs.
 
 2024/07/13
-	* Integrated c_model support for Hands. (Seriously, i understand not wanting to be a modern ZS implementation, but that's just silly, atleast force the c_ hands to CS:S ones instead of not fixing them at all.)
-	* Re-integrated a playermodel selection menu.
-	* Added a null voiceline for non-categorized playermodels. (I plan on categorized every "Valve official" playermodel properly in due time using Workshop packs. For now, this is a WIP and only has the default playermodels it had organized.)
-	* Fixed (?) Combine voicelines.
-	* Changed most of the weapons and rewards to SWCS/CS:GO ones. (Main Pack, Extras, Noble Strike and Custom ones used)
-	* Changed starting loadouts. (4 possible pistol options when spawning: Glock 18, CS:GO Alpha USP, HK P2000 and USP-S, you also don't have a knife anymore, gotta buy it. Good luck!)
-	* Fixed CalcView to support weapon bases or addon modifications. (It used to ignore hook changes, i made it work like GM13's default implementation, so its hijackable again, go NUTS.WAD)
+	* (+)Integrated c_model support for Hands. (Seriously, i understand not wanting to be a modern ZS implementation, but that's just silly, atleast force the c_ hands to CS:S ones instead of not fixing them at all.)
+	* (+)Re-integrated a playermodel selection menu.
+	* (+)Added a null voiceline for non-categorized playermodels. (I plan on categorized every "Valve official" playermodel properly in due time using Workshop packs. For now, this is a WIP and only has the default playermodels it had organized.)
+	* (=)Fixed (?) Combine voicelines.
+	* (+)Changed most of the weapons and rewards to SWCS/CS:GO ones. (Main Pack, Extras, Noble Strike and Custom ones used)
+	* (+)Changed starting loadouts. (4 possible pistol options when spawning: Glock 18, CS:GO Alpha USP, HK P2000 and USP-S, you also don't have a knife anymore, gotta buy it. Good luck!)
+	* (=)Fixed CalcView to support weapon bases or addon modifications. (It used to ignore hook changes, i made it work like GM13's default implementation, so its hijackable again, go NUTS.WAD)
 ```
 
 # My plans for the future of this branch
@@ -75,8 +93,7 @@ Note: click [here](https://github.com/Xalalau/Zombie-Survival-v1.11-Fix/wiki/Som
 	* Fix Enhanced Player Model Selector updating voice packs with this gamemode.
 	* Keep up with main branch (requirement, obviously, if its a bugfix which gets in the way of my "modernization", i'll try to either adapt it to my code or ignore entirely)
 	* Categorize other Valve official or lore-friendly playermodels. (Detect if a game is mounted, and if it is, add voicelines to use with their playermodels. Also add support for Valve stuff on the workshop such as Portal 2, Half-Life 2 - Survivor [Arcade HL2 Ver], Cyber Diver V2 [Arcade Game based on Source Engine by Taito], E.Y.E Divine Cybermancy [Classic Source-based standalone game], CS:S and so on.)
-	* Other fun stuff (Use Sandbox addons to add more content and features to the existing gamemode base, currently uses a buymenu from Sandbox, but i plan to have a better one in the near-future.)
-	= Add support for Objective (zs_obj_), Zombie Master (zm_), Zombie Escape (ze_) and similar maps. (Focus is on Objective maps since its kinda official, if not supported)
+	* Add support for Objective (zs_obj_), Zombie Master (zm_), Zombie Escape (ze_) and similar maps. (Focus is on Objective maps since its kinda official, if not supported)
 ```
 
 # v1.11 Fix by Xalalau & collaborators changelog
